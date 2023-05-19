@@ -164,3 +164,4 @@ Dataset/
 Savings/
 TestData/
 *.h5
+.vscode/
