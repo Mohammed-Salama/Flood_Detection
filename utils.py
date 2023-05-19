@@ -16,7 +16,7 @@ import seaborn as sns
 ## Global variables
 
 CLASSES = ["flooded", "non-flooded"]
-IMG_SIZE = (512, 512)
+IMG_SIZE = (224, 224)
 
 
 
@@ -90,3 +90,19 @@ def evaluate_model(model, X_test, y_test):
     cm = confusion_matrix(y_test, y_pred)
     sns.heatmap(cm, annot=True, fmt='d')
     plt.show()
+
+
+
+from pathlib import Path
+import imageio
+
+def save_imgs(path:Path, data, labels):
+    labels = np.argmax(labels, axis=1)
+    for label in np.unique(labels):
+        (path/str(label)).mkdir(parents=True,exist_ok=True)
+    for i in range(len(data)):
+        if(len(labels)!=0):
+            imageio.imsave( str( path/str(labels[i])/(str(i)+'.jpg') ), data[i])
+        else:
+            imageio.imsave( str( path/(str(i)+'.jpg') ), data[i])
+

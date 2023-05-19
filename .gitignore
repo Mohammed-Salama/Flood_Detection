@@ -161,7 +161,9 @@ cython_debug/
 
 
 Dataset/
+Dataset-ResNet/
 Savings/
 TestData/
 *.h5
 .vscode/
+*.pth
