@@ -167,3 +167,4 @@ TestData/
 *.h5
 .vscode/
 *.pth
+*.zip
