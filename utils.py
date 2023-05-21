@@ -11,18 +11,19 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 from sklearn.model_selection import learning_curve
 import seaborn as sns
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+
 
 
 ## Global variables
 
 CLASSES = ["flooded", "non-flooded"]
-IMG_SIZE = (224, 224)
-
 
 
 ## Functions
 
-def load_data(data_path):
+def load_data(data_path, IMG_SIZE):
     data = []
     labels = []
     for c in CLASSES:
@@ -83,8 +84,20 @@ def evaluate_model(model, X_test, y_test):
     # print f1 score
     print("F1 score: ", f1_score(y_test, y_pred, average='macro'))
 
+    # print precision
+    print("Precision: ", precision_score(y_test, y_pred, average='macro'))
+
+    # print recall
+    print("Recall: ", recall_score(y_test, y_pred, average='macro'))
+
+    #print omission error
+    print("Omission error: ", 1 - recall_score(y_test, y_pred, average='macro'))
+
+    # print commission error
+    print("Commission error: ", 1 - precision_score(y_test, y_pred, average='macro'))
+
     # print classification report
-    print("Classification report: \n", classification_report(y_test, y_pred))
+    # print("Classification report: \n", classification_report(y_test, y_pred))
 
     # plot confusion matrix
     cm = confusion_matrix(y_test, y_pred)
