@@ -17,6 +17,7 @@ This project focuses on detecting floods in satellite images using various appro
 ## 3. Segmentation of Flooded Area (Unsupervised)
 
 - ISODATA Clustering:
-    ![image](https://github.com/Mohammed-Salama/Automated_post-flood_damages_detection/assets/62220722/059aa97c-0bd2-4902-ab16-5b858460cbd0)
+    ![image](https://github.com/Mohammed-Salama/Automated_post-flood_damages_detection/assets/62220722/e40cc589-e79c-408a-bca8-e392bc64ff8c)
+
 
 
