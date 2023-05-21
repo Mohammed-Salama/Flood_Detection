@@ -6,7 +6,7 @@ This project focuses on detecting floods in satellite images using various appro
 
 - Random forst classifier:
     - Confusion Matrix:
-           - ![image](https://github.com/Mohammed-Salama/Automated_post-flood_damages_detection/assets/62220722/3f92d350-8cea-470c-85f6-29e8ad669707)
+         - ![image](https://github.com/Mohammed-Salama/Automated_post-flood_damages_detection/assets/62220722/3f92d350-8cea-470c-85f6-29e8ad669707)
 
 ## 2. Deep Learning Approach
 
