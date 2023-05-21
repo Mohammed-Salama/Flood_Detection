@@ -1,4 +1,4 @@
-# Flood Detection in Satellite Images
+# Flood Detection in Satellite Images 💦 🛰️
 
 This project focuses on detecting floods in satellite images using various approaches. It is divided into three main tasks:
 
