@@ -4,7 +4,7 @@ This project focuses on detecting floods in satellite images using various appro
 
 ## 1. Classical Approaches
 
-- Random forst classifier:
+- Random forest classifier:
     - Confusion Matrix:
          - ![image](https://github.com/Mohammed-Salama/Automated_post-flood_damages_detection/assets/62220722/dd332d04-d5de-41da-bd53-acba58f289c4)
 
